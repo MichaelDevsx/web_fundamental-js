@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>GamingDojo</title>
+</head>
+<body>
+    <header class="container--header-info">
+        <h1>Gagming<span>Dojo</span></h1>
+        <select class="select--button">
+            <option value="English">Euro €</option>
+            <option value="Spanish">Dollar $</option>
+        </select>
+        <img class="cart" src="./images/cart-light.png" alt="i">
+        <p class="count_cart">0</p>
+        <img class="search" src="./images/search-light.png" alt="i">
+    </header>
+    <main class="container--main">
+        <div class="high">
+            <p>Highlights</p>
+        </div>
+        <div class="carousel">
+            <img class="carousel__button previous" id="previous" src="./images/chevron-left.png" alt="">
+            <div class="carousel__images">
+            <img src="./images/cafe-neko.png" alt="" width="800" height="400">
+            <img src="./images/pixel-ninjas-2.png" alt="" width="800" height="400">
+            <img src="./images/stonepunk.png" alt="" width="800" height="400">
+        </div>
+        <img class="carousel__button next" id="next" src="./images/chevron-left.png" alt="">
+        </div>
+        <section class="line--carrou">
+            <div class="line1"></div>
+            <div id="purp" class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+        </section>
+        <section class="container-section">
+            <article class="container-article1">
+                <img class="port-game" src="./images/cafe-neko.png" alt="">
+                <div class="article-fondo">
+                    <p>Cafe Neko: Gold Edition</p>
+                    <div>
+                        <img class="brand-img" src="./images/windows.png" alt="">
+                        <img class="brand-img" src="./images/apple.png" alt="">
+                    </div>
+                    <div class="article1-button">
+                        <button class="button-descuent">-20%</button>
+                        <div>
+                            <p class="line-paragraph"><span>€14.98</span><br><strong>€10.49</strong></p>
+                        </div>
+                        <button onclick="add()" class="button-buy">Buy</button>
+                    </div>
+                </div>
+            </article>
+            <article class="container-article1">
+                <img class="port-game" src="./images/pixel-ninjas-2.png" alt="">
+                <div class="article-fondo">
+                    <p>Pixel Ninjas 2</p>
+                    <div>
+                        <img class="brand-img" src="./images/windows.png" alt="">
+                        <img class="brand-img" src="./images/apple.png" alt="">
+                    </div>
+                    <div class="article1-button">
+                        <button class="button-descuent">-10%</button>
+                        <div>
+                            <p class="line-paragraph"><span>€8.19</span><br><strong>€7.39</strong></p>
+                        </div>
+                        <button onclick="add()" class="button-buy">Buy</button>
+                    </div>
+                </div>
+            </article>
+            <article class="container-article1">
+                <img class="port-game" src="./images/stonepunk.png" alt="">
+                <div class="article-fondo">
+                    <p>Stonepunk 100000 BCE</p>
+                    <div>
+                        <img class="brand-img" src="./images/windows.png" alt="">
+                        <img class="brand-img" src="./images/apple.png" alt="">
+                        <img id="linux" onclick="msg(this)" class="brand-img" src="./images/linux.png" alt="">
+                    </div>
+                    <div class="article1-button">
+                        <button class="button-descuent">NEW</button>
+                        <div>
+                            <p class="line-paragraph"><span></span><br><strong>€19.99</strong></p>
+                        </div>
+                        <button onclick="add()" class="button-buy">Buy</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+<script src="./script.js"></script>
+</body>
+</html>
